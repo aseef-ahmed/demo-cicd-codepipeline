@@ -9,6 +9,8 @@ set -e
 
 SERVICE_NAME="flask-app"
 TASK_FAMILY="flask-app"
+
+
 ECS_TASK_DEFINITION_TEMPLATE="task.json"
 ECS_TASK="task-ecs.json"
 ECR_IMAGE="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME}:${CODEBUILD_RESOLVED_SOURCE_VERSION}"
